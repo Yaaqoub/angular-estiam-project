@@ -16,3 +16,30 @@
   border-bottom: 1px solid #ddd;
 }
 
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.user-container {
+  width: 100%;
+}
+
+.example-card {
+  width: 100%;
+}
+
+/* Make it responsive for smaller screens */
+@media (max-width: 960px) {
+  .users-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+}
